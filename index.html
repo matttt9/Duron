@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matt's Midterm Project</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <style>
+    .features-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+  
+    /* Single Row Layout */
+    .features {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin-top: 20px;
+    }
+  
+    .feature-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+  
+    .feature-box {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.2s;
+        margin-bottom: 10px;
+    }
+  
+    .feature-box:hover {
+        transform: scale(1.1);
+    }
+  
+    .feature-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+  
+    .btn {
+        display: inline-block;
+        padding: 8px 12px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        width: 160px;
+        margin-top: 5px;
+    }
+  
+    .btn-primary {
+        background-color: #c770f0;
+        color: white;
+    }
+  
+    .btn-primary:hover {
+        background-color: #a55fd4;
+    }
+  
+    .blue {
+        background-color: #4a90e2;
+    }
+  
+    .blue:hover {
+        background-color: #357ac9;
+    }
+  </style>
+  
+</head>
+<body>
+  <main>
+    <article>
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="hero-banner">
+            <img src="matt.jpg" width="800" height="864" alt="Matt's Photo" class="img-cover">
+          </div>
+
+          <div class="hero-content">
+            <h2 class="hero-title">
+              <span>Hello I'm</span>
+              <strong>Matt Lyndon Duron</strong><br>
+              
+              Flutter Developer
+            </h2>
+
+            <div class="features-container">
+              <div class="features">
+                  <div class="feature-item">
+                      <a href="https://drive.google.com/drive/folders/1cP5xsASm6e0dLmYVlabn_tU4pMeFr0gw?usp=sharing" class="feature-box"><img src="helloworlddd.jpeg" alt="Feature 1"></a> <a href="https://drive.google.com/drive/folders/1cP5xsASm6e0dLmYVlabn_tU4pMeFr0gw?usp=sharing" class="btn btn-primary blue">Hello World App</a>
+                  </div>
+          
+                  <div class="feature-item">
+                      <a href="https://drive.google.com/drive/folders/1H_E6tGOgnT0WZntut3mIUzmOdod3335q?usp=sharing" class="feature-box"><img src="todo.jpeg" alt="Feature 2"></a> <a href="https://drive.google.com/drive/folders/1H_E6tGOgnT0WZntut3mIUzmOdod3335q?usp=sharing" class="btn btn-primary blue">To-Do App</a>
+                  </div>
+          
+                  <div class="feature-item">
+                      <a href="https://drive.google.com/drive/folders/1ZjOJfwxf9ln0J_2Jw_4B6EVmmBUZtc_p?usp=sharing" class="feature-box"><img src="quiz.jpeg" alt="Feature 3"></a> <a href="https://drive.google.com/drive/folders/1ZjOJfwxf9ln0J_2Jw_4B6EVmmBUZtc_p?usp=sharing" class="btn btn-primary blue">Quiz Recorder App</a>
+                  </div>
+          
+                  <div class="feature-item">
+                      <a href="https://drive.google.com/file/d/1UIF56Z86kWeD-Cy2Z2VlkEMnjaoHoVqQ/view?usp=sharing" class="feature-box"><img src="firebasee.jpeg" alt="Feature 4"></a> <a href="https://drive.google.com/file/d/1UIF56Z86kWeD-Cy2Z2VlkEMnjaoHoVqQ/view?usp=sharing" class="btn btn-primary blue">Firebase App</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </main>
+</body>
+</html>
